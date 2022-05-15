@@ -24,6 +24,7 @@ namespace RPG
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Game_Start_Inital();
             Point location = Player.Location;
             Console.WriteLine(location.ToString());
             //timer1.Start();
@@ -91,6 +92,23 @@ namespace RPG
             {
                 MoveDown = false;
             }
+        }
+
+        //遊戲開始時初始化
+        private void Game_Start_Inital()
+        {
+            Ghost.Visible = false;
+            Boss.Visible = false;
+            Blue_Poition.Visible = false;
+            Red_Poition.Visible = false;
+            Axe.Visible = false;
+            Bow.Visible = false;
+            Sword.Visible = false; 
+            Item_Blue_Poition.Visible=false;
+            Item_red_potion.Visible=false;
+            Item_Axe.Visible=false;
+            Item_Bow.Visible=false;
+            Item_Sword.Visible=false;
         }
     }
 }
